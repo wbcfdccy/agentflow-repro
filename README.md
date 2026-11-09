@@ -84,6 +84,8 @@
 
 > 评分为宽松匹配（`<answer>` 归一化包含 / 字母选项），非官方脚本，存在高估与低估。
 
+> 📦 原始运行轨迹（120 次运行的 JSON / 日志，约 5.6 MB）：[v0.1.0 Release](https://github.com/wbcfdccy/agentflow-repro/releases/tag/v0.1.0)
+
 ---
 
 ## 复现步骤
