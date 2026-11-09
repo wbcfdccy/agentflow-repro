@@ -1,0 +1,60 @@
+
+Task: Determine the optimal next step to address the query using available tools and previous steps.
+
+Context:
+- **Query:** What is the 100th prime number multiplied by the 2025 population of Iceland?
+- **Query Analysis:** ### Summary
+The query asks for the product of the 100th prime number and the 2025 population of Iceland.
+
+### Skills Needed
+1. **Prime Number Identification**
+   - Required to find the 100th prime number.
+2. **Population Data Retrieval**
+   - Necessary to obtain Iceland’s population in 2025.
+3. **Basic Arithmetic Operations**
+   - To multiply the identified prime number by Iceland's population.
+
+### Tools Required
+- **Python_Code_Generator_Tool**
+
+#### Explanations
+
+- **Prime Number Identification**:
+  - This requires knowledge of algorithms to identify prime numbers, such as trial division or more efficient methods like Sieve of Eratosthenes.
+
+- **Population Data Retrieval**:
+  - While not handled directly by any tool mentioned, this would typically involve accessing an external database or API (not covered here).
+
+- **Basic Arithmetic Operations**:
+  - Simple multiplication can be performed using basic Python arithmetic operations, which are supported by `Python_Code_Generator_Tool`.
+
+#### How Each Tool Helps
+- The `Python_Code_Generator_Tool` will help generate and execute a Python script that identifies primes up to a certain point until it finds the 100th one and multiplies it with a provided population figure (once obtained).
+
+### Additional Considerations
+
+1. Population data for year-specific predictions may not be readily available without accessing external sources or projections.
+2. Ensure that only numerical results are returned from generated code since non-numerical outputs might indicate errors in generation logic.
+3. Verify that all required steps are contained within a single function/script due to restrictions on loops and imports in `Python_Code_Generator_Tool`.
+- **Available Tools:** ['Python_Code_Generator_Tool']
+- **Toolbox Metadata:** {'Python_Code_Generator_Tool': {'tool_name': 'Python_Code_Generator_Tool', 'tool_description': 'A tool that generates and executes simple Python code snippets for basic arithmetical calculations and math-related problems. The generated code runs in a highly restricted environment with only basic mathematical operations available.', 'tool_version': '1.0.0', 'input_types': {'query': 'str - A clear, specific description of the arithmetic calculation or math problem to be solved, including any necessary numerical inputs.'}, 'output_type': 'dict - A dictionary containing the generated code, calculation result, and any error messages.', 'demo_commands': [{'command': 'execution = tool.execute(query="Find the sum of prime numbers up to 50")', 'description': 'Generate a Python code snippet to find the sum of prime numbers up to 50.'}, {'command': 'query="Given the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], calculate the sum of squares of odd numbers"\nexecution = tool.execute(query=query)', 'description': 'Generate a Python function for a specific mathematical operation on a given list of numbers.'}], 'user_metadata': {'limitations': "\nThe Python_Code_Generator_Tool has several limitations:\n1. Restricted to basic Python arithmetic operations and built-in mathematical functions.\n2. Cannot use any external libraries or modules, including those in the Python standard library.\n3. Limited to simple mathematical calculations and problems.\n4. Cannot perform any string processing, data structure manipulation, or complex algorithms.\n5. No access to any system resources, file operations, or network requests.\n6. Cannot use 'import' statements.\n7. All calculations must be self-contained within a single function or script.\n8. Input must be provided directly in the query string.\n9. Output is limited to numerical results or simple lists/tuples of numbers.\n10. Output should be kept to a single numerical result or a simple list/tuple of numbers.\n11. DO NOT generate loop output.\n", 'best_practices': '\nFor optimal results with the Python_Code_Generator_Tool:\n1. Provide clear and specific queries that describe the desired mathematical calculation.\n2. Include all necessary numerical inputs directly in the query string.\n3. Keep tasks focused on basic arithmetic, algebraic calculations, or simple mathematical algorithms.\n4. Ensure all required numerical data is included in the query.\n5. Verify that the query only involves mathematical operations and does not require any data processing or complex algorithms.\n6. Review generated code to ensure it only uses basic Python arithmetic operations and built-in math functions.\n'}, 'require_llm_engine': True}}
+- **Previous Steps:** {'Action Step 1': {'tool_name': 'Python_Code_Generator_Tool', 'sub_goal': "Generate a Python script that finds the 100th prime number and allows us to input Iceland's population in 2025, then compute their product.\n\n4.", 'command': 'execution = tool.execute(query="Find the 100th prime number and multiply it by the population of Iceland in 2025 which is provided as a numerical value.")', 'result': [{'error': 'unexpected indent (<string>, line 24)'}]}}
+
+Instructions:
+1. Analyze the query, previous steps, and available tools.
+2. Select the **single best tool** for the next step.
+3. Formulate a specific, achievable **sub-goal** for that tool.
+4. Provide all necessary **context** (data, file names, variables) for the tool to function.
+
+Response Format:
+1.  **Justification:** Explain your choice of tool and sub-goal.
+2.  **Context:** Provide all necessary information for the tool.
+3.  **Sub-Goal:** State the specific objective for the tool.
+4.  **Tool Name:** State the exact name of the selected tool.
+
+Rules:
+- Select only ONE tool.
+- The sub-goal must be directly achievable by the selected tool.
+- The Context section must contain all information the tool needs to function.
+- The response must end with the Context, Sub-Goal, and Tool Name sections in that order, with no extra content.
+                    

@@ -1,0 +1,63 @@
+{
+  "environment": {
+    "gpu": "RTX 4090D 24G",
+    "vllm": "0.11.0",
+    "planner": "AgentFlow/agentflow-planner-7b (fp32->bf16)",
+    "executor_verifier_fixed": "DashScope qwen-plus",
+    "tool_model": "OpenAI gpt-4o-mini"
+  },
+  "aime24_10": {
+    "A_qwen_all": "0/10",
+    "B_planner_all": "0/10",
+    "C1_planner_qwenplus": "6/10",
+    "D1_qwen_qwenplus": "5/10"
+  },
+  "multi_hop_10_each": {
+    "hotpotqa": {
+      "planner": "4/10",
+      "qwen": "4/10"
+    },
+    "musique": {
+      "planner": "3/10",
+      "qwen": "2/10"
+    },
+    "2wiki": {
+      "planner": "6/10",
+      "qwen": "5/10"
+    },
+    "total": {
+      "planner": "13/30",
+      "qwen": "11/30"
+    }
+  },
+  "b_group": {
+    "planner": {
+      "aime24": "8/20",
+      "amc23": "8/10",
+      "gpqa": "7/10",
+      "medqa": "10/10",
+      "gameof24": "8/9",
+      "total": "41/59"
+    },
+    "qwen": {
+      "aime24": "8/20",
+      "amc23": "7/10",
+      "gpqa": "7/10",
+      "medqa": "10/10",
+      "gameof24": "9/10",
+      "total": "41/60"
+    }
+  },
+  "mechanism_observations": {
+    "planner_prompt_chars": 7272,
+    "query_chars": 110,
+    "tool_metadata_chars": 4090,
+    "history_growth_chars": [
+      5584,
+      6038,
+      6813
+    ],
+    "multihop_tool_calls": 86,
+    "multihop_relevant_pages_nonempty": 0
+  }
+}

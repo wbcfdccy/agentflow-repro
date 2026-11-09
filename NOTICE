@@ -1,0 +1,23 @@
+# NOTICE
+
+This repository is an **unofficial reproduction and analysis** of:
+
+- **AgentFlow**: https://github.com/lupantech/AgentFlow
+  Copyright (c) 2025 the AgentFlow Team, licensed under the MIT License.
+  The scripts in `scripts/` are original work written for this reproduction;
+  they are designed to run against the unmodified AgentFlow codebase.
+
+- Paper: *In-the-Flow Agentic System Optimization for Effective Planning and Tool Use*
+  (ICLR 2026). This repository does not redistribute the paper.
+
+## Third-party assets
+
+- `docs/04-多跳逐题明细.md` quotes questions from HotpotQA, Musique and 2WikiMultiHopQA
+  for analysis purposes only. Those datasets remain under their original licenses:
+  - HotpotQA: CC BY-SA 4.0
+  - Musique: CC BY 4.0
+  - 2WikiMultiHopQA: MIT
+  Please refer to the original dataset releases for terms of use.
+
+- No model weights, API keys, credentials, or benchmark data files are included
+  in this repository.

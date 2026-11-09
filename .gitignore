@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+*.log
+*.tgz
+*.docx
+models/
+pylibs/
+tmp/
+.sshcreds.json
+results/raw/
+.DS_Store
+Thumbs.db

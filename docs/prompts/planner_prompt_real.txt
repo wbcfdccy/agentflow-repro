@@ -1,0 +1,56 @@
+
+Task: Determine the optimal next step to address the query using available tools and previous steps.
+
+Context:
+- **Query:** A bookstore had 48 copies. It sold 3/8 on Monday and 12 on Tuesday. How many are left? Answer with the number.
+- **Query Analysis:** ### Summary of the Query
+The query asks how many copies of a bookstore's inventory are left after selling some books on Monday and Tuesday. The initial stock was 48 copies, 3/8 were sold on Monday, and 12 were sold on Tuesday.
+
+### Necessary Skills and Tools
+#### Skills:
+1. **Arithmetic Operations**: Basic addition, subtraction, multiplication, and division.
+2. **Problem-Solving**: Breaking down the problem into smaller steps.
+
+#### Tools:
+1. **Generalist_Solution_Generator_Tool**
+2. **Python_Code_Generator_Tool**
+
+### Explanations
+
+**Skills:**
+- **Arithmetic Operations**: Essential for performing calculations such as finding fractions of numbers (3/8) and subtracting quantities.
+- **Problem-Solving**: Required to decompose the problem into manageable parts (e.g., calculating sales for Monday separately from Tuesday).
+
+**Tools:**
+- **Generalist_Solution_Generator_Tool**: Useful for step-by-step reasoning if basic arithmetic isn't sufficient or if more complex logic is needed beyond simple operations.
+- **Python_Code_Generator_Tool**: Ideal for automating arithmetic calculations quickly using code snippets tailored to solve the specific problem at hand.
+
+### Additional Considerations
+- Since this query deals with straightforward arithmetic operations that involve no external dependencies or complex algorithms, both tools can be used effectively.
+- If choosing between these tools based solely on simplicity and effectiveness:
+    - Use `Python_Code_Generator_Tool` directly due to its focus on basic math problems requiring minimal setup.
+    - Use `Generalist_Solution_Generator_Tool` as a fallback or secondary method if Python’s capabilities aren’t immediately apparent but might help clarify steps through detailed explanation.
+
+By leveraging these skills and tools appropriately, one can efficiently determine how many book copies remain in stock following the specified sales transactions.
+- **Available Tools:** ['Generalist_Solution_Generator_Tool', 'Python_Code_Generator_Tool']
+- **Toolbox Metadata:** {'Generalist_Solution_Generator_Tool': {'tool_name': 'Generalist_Solution_Generator_Tool', 'tool_description': 'A generalized tool that takes query from the user, and answers the question step by step to the best of its ability. It can also accept an image.', 'tool_version': '1.0.0', 'input_types': {'query': 'str - The query that includes query from the user to guide the agent to generate response.'}, 'output_type': 'str - The generated response to the original query', 'demo_commands': [{'command': 'execution = tool.execute(query="Summarize the following text in a few lines")', 'description': 'Generate a short summary given the query from the user.'}], 'user_metadata': {'limitation': '\nThe Generalist_Solution_Generator_Tool may provide hallucinated or incorrect responses.\n', 'best_practice': "\nFor optimal results with the Generalist_Solution_Generator_Tool:\n1. Use it for general queries or tasks that don't require specialized knowledge or specific tools in the toolbox.\n2. Provide clear, specific query.   \n3. Use it to answer the original query through step by step reasoning for tasks without complex or multi-step reasoning.\n4. For complex queries, break them down into subtasks and use the tool multiple times.\n5. Use it as a starting point for complex tasks, then refine with specialized tools.\n6. Verify important information from its responses.\n"}, 'require_llm_engine': True}, 'Python_Code_Generator_Tool': {'tool_name': 'Python_Code_Generator_Tool', 'tool_description': 'A tool that generates and executes simple Python code snippets for basic arithmetical calculations and math-related problems. The generated code runs in a highly restricted environment with only basic mathematical operations available.', 'tool_version': '1.0.0', 'input_types': {'query': 'str - A clear, specific description of the arithmetic calculation or math problem to be solved, including any necessary numerical inputs.'}, 'output_type': 'dict - A dictionary containing the generated code, calculation result, and any error messages.', 'demo_commands': [{'command': 'execution = tool.execute(query="Find the sum of prime numbers up to 50")', 'description': 'Generate a Python code snippet to find the sum of prime numbers up to 50.'}, {'command': 'query="Given the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], calculate the sum of squares of odd numbers"\nexecution = tool.execute(query=query)', 'description': 'Generate a Python function for a specific mathematical operation on a given list of numbers.'}], 'user_metadata': {'limitations': "\nThe Python_Code_Generator_Tool has several limitations:\n1. Restricted to basic Python arithmetic operations and built-in mathematical functions.\n2. Cannot use any external libraries or modules, including those in the Python standard library.\n3. Limited to simple mathematical calculations and problems.\n4. Cannot perform any string processing, data structure manipulation, or complex algorithms.\n5. No access to any system resources, file operations, or network requests.\n6. Cannot use 'import' statements.\n7. All calculations must be self-contained within a single function or script.\n8. Input must be provided directly in the query string.\n9. Output is limited to numerical results or simple lists/tuples of numbers.\n10. Output should be kept to a single numerical result or a simple list/tuple of numbers.\n11. DO NOT generate loop output.\n", 'best_practices': '\nFor optimal results with the Python_Code_Generator_Tool:\n1. Provide clear and specific queries that describe the desired mathematical calculation.\n2. Include all necessary numerical inputs directly in the query string.\n3. Keep tasks focused on basic arithmetic, algebraic calculations, or simple mathematical algorithms.\n4. Ensure all required numerical data is included in the query.\n5. Verify that the query only involves mathematical operations and does not require any data processing or complex algorithms.\n6. Review generated code to ensure it only uses basic Python arithmetic operations and built-in math functions.\n'}, 'require_llm_engine': True}}
+- **Previous Steps:** {}
+
+Instructions:
+1. Analyze the query, previous steps, and available tools.
+2. Select the **single best tool** for the next step.
+3. Formulate a specific, achievable **sub-goal** for that tool.
+4. Provide all necessary **context** (data, file names, variables) for the tool to function.
+
+Response Format:
+1.  **Justification:** Explain your choice of tool and sub-goal.
+2.  **Context:** Provide all necessary information for the tool.
+3.  **Sub-Goal:** State the specific objective for the tool.
+4.  **Tool Name:** State the exact name of the selected tool.
+
+Rules:
+- Select only ONE tool.
+- The sub-goal must be directly achievable by the selected tool.
+- The Context section must contain all information the tool needs to function.
+- The response must end with the Context, Sub-Goal, and Tool Name sections in that order, with no extra content.
+                    
